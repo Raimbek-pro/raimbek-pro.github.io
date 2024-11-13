@@ -49,3 +49,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%;  /* Makes the photo round */
+    width: 150px;        /* Set a size for the image */
+    height: 150px;       /* Ensure the height matches the width */
+    object-fit: cover;   /* Ensures the image fills the circle properly without stretching */
+    border: 5px solid #fff;  /* Add a border around the image for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a more 3D effect */
+    margin-bottom: 20px; /* Space between the image and text */
+}
+
+/* Optional: Hover effect for a fun interactive element */
+.profile-photo:hover {
+    transform: scale(1.1);  /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease-in-out;
+}
